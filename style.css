@@ -1,0 +1,195 @@
+:root {
+  --main-color: #3498db;
+  --secondary-color: hsl(160, 60%, 50%);
+}
+
+h1 {
+  color: var(--main-color, blue);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: cornflowerblue;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a[href] {
+  color: purple;
+}
+
+#attendance {
+  background-color: #f0f8ff;
+}
+
+section{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 15px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ccc; 
+}
+
+span {
+    font-weight: bold;
+    color: var(--secondary-color, green);
+    display : inline-block;
+    background-color: #f0f0f0;
+}
+
+div {
+    display: block;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+}
+
+video{
+    width: 50vw;
+    height: auto;
+}
+
+audio{
+  display: none;
+}
+
+section{
+    min-width: 300px;
+    max-width: 800px;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+button:active {
+  background-color: navy;
+}
+
+section p {
+  color: gray;
+}
+
+section > h2 {
+  border-bottom: 2px solid black;
+}
+
+body{
+  font-size: 16px;
+  background-color: #3498db;
+}
+
+h1{
+  font-size: 2.5em;
+  text-decoration: underline;
+}
+
+h2 + ul {
+  background-color: #f9f9f9;
+}
+
+h2 ~ p {
+  font-style: italic;
+}
+
+section.highlight {
+  background-color: rgb(93, 161, 216);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+nav {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section:has(img) {
+  background-color: #eaf7ff;
+}
+
+section{
+  border-width: 2px;
+}
+
+section h2 {
+  color: rgb(141, 212, 231);
+  
+}
+
+section {
+  border-width: 2pt; 
+}
+
+h3 {
+  font-size: 0.5in;
+  color: color(display-p3 0.5 0.5 0.5);
+}
+
+p {
+  color: bisque;
+}
+
+a {
+  display: inline;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
+
